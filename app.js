@@ -20,7 +20,7 @@ mongoose.connect(
   () => console.log('DB connection success!')
 );
 
-app.use(`${URL_PREFIX}/user`, authRouter);
+app.use(`${URL_PREFIX}/auth`, authRouter);
 app.use(`${URL_PREFIX}/users`, usersRouter);
 app.use(`${URL_PREFIX}/posts`, postsRouter);
 
